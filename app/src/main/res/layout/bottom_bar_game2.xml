@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/b_swap_sung"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Echanger 10 de points en Sung"/>
+
+    <Button
+        android:id="@+id/b_swap_bonheur"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Echanger 40 de points en Bonheur"/>
+
+    <Button
+        android:id="@+id/b_swap_faim"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Echanger 100 de points en faim"/>
+
+</LinearLayout>

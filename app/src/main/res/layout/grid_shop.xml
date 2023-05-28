@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/shop_11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Shop pour récuperer de la Faim"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/shop_12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Shop pour récuperer du Bonheur"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:scaleType="centerInside" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/shop_21"
+            layout="@layout/item_shop_bread"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+
+        <include
+            android:id="@+id/shop_22"
+            layout="@layout/item_shop_igris"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/shop_31"
+            layout="@layout/item_shop_meat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+        <include
+            android:id="@+id/shop_32"
+            layout="@layout/item_shop_beru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/shop_41"
+            layout="@layout/item_shop_ice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/shop_42"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">App tamagotchi</string>
+    <string name="welcome_msg">Bienvenue sur mon tamagotchi</string>
+    <string name="item_default_name">Nom de l\'item</string>
+
+        <!-- parametre du jeu -->
+    <string name="max_faim">50</string>
+    <string name="max_bonheur">50</string>
+    <string name="perte_faim_par_heure">1</string>
+    <string name="perte_bonheur_par_heure">2</string>
+    <string name="coockie_points">points : 0</string>
+    <string name="gain_sung_cookie">0</string>
+
+
+    <!-- nourriture -->
+    <string name="pain_gain_nourriture">5</string>
+
+
+    <!-- bonheur -->
+    <string name="igris_gain_bonheur">3</string>
+    <string name="beru_gain_bonheur">4</string>
+    <string name="item_default_price">0€</string>
+
+
+</resources>

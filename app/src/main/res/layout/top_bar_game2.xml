@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/point_cookie"
+        android:text="@string/coockie_points"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/second_game_return_home"
+        android:text="Home"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"/>
+
+</LinearLayout>
