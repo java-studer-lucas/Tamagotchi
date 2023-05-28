@@ -11,7 +11,7 @@ Une appli Android de **Tamagotchi** basé sur l'univers de Solo levelling (perso
 * Mini jeu de type "PianoTiles" 
 
 ## Installation
-Télécharger le dernier [APK](res/app_tamagotchi-v5.apk)
+Télécharger le dernier [APK](res/app_tamagotchi_v5.apk)
 et ouvrer le sur votre appareil pour l'installer manuellement.
 
 **Note :** cette application ne provenant pas d'un PlayStore reconnu, il est nécessaire d'accepter les avertissements d'Android concernant la potentialité de danger lors de l'installation de l'application.
