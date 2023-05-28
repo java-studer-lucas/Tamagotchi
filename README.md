@@ -4,7 +4,7 @@ Une appli Android de **Tamagotchi** basé sur l'univers de Solo levelling (perso
 ## Features
 * gestion des points de faim
 * gestion des points de bonheur
-* gestion des points d'argent (des Sungs
+* gestion des points d'argent (des Sungs)
 * boutique d'achat d'objets
 * Inventaire des objets achetés
 * Mini jeu click-cookie pour gagner des points a transformer en argent
@@ -54,7 +54,7 @@ Permet d'acheter des items pour récupérer de la Faim grace a des pieces gagné
 ![Shop](res/screen_shop.jpg "Shop")
 
 ### Inventaire
-Permet d'utiliser les items achetés dasn le Shop.
+Permet d'utiliser les items achetés dans le Shop.
 
 ![Inventaire](res/screen_inventaire.jpg "Inventaire")
 
