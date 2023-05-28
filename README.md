@@ -11,7 +11,7 @@ Une appli Android de **Tamagotchi** basé sur l'univers de Solo levelling (perso
 * Mini jeu de type "PianoTiles" 
 
 ## Installation
-Télécharger le dernier [APK](https://)
+Télécharger le dernier [APK](res/app_tamagotchi-v5.apk)
 et ouvrer le sur votre appareil pour l'installer manuellement.
 
 **Note :** cette application ne provenant pas d'un PlayStore reconnu, il est nécessaire d'accepter les avertissements d'Android concernant la potentialité de danger lors de l'installation de l'application.
@@ -51,20 +51,20 @@ Si vous arrivez a 0 Faim, votre Tamagotchi meurt !
 ### Boutique/Shop
 Permet d'acheter des items pour récupérer de la Faim grace a des pieces gagnées.
 
-(img shop)
+![Shop](res/screen_shop.jpg "Shop")
 
 ### Inventaire
 Permet d'utiliser les items achetés dasn le Shop.
 
-(img inventaire)
+![Inventaire](res/screen_inventaire.jpg "Inventaire")
 
 ### Mini-jeu 1 : Pianotiles
 Pendant 15 sec., vous devez taper sur un maximum de Vilains de la 3eme ligne, sans taper sur un carré de pelouse (vert).
 Ainsi vous gagnez des points a convertir en piece via les boutons du bas.
 
-(img jeu1)
+![Jeu1](res/screen_minijeu1.png "Jeu1")
 
 ### Mini-jeu 2 : Click-Cookies
 Cliquez autant de fois que souhaité sur l'image du cookie. Cela incrénente vos points que vous pouvez convertir en pieces (10 points = 1 piece)
 
-(img jeu1)
+![Jeu2](res/screen_minijeu2.jpg "Jeu2")
