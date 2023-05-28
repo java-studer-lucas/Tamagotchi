@@ -136,6 +136,7 @@ public class InventaireActivity extends AppCompatActivity {
                 }
             }
         });
+
         Button igrisInvHide = findViewById(R.id.inventaire_b_hide_21);
 
         igrisInvHide.setOnClickListener(new View.OnClickListener() {
@@ -175,6 +176,7 @@ public class InventaireActivity extends AppCompatActivity {
                 }
             }
         });
+
         Button beruInvHide = findViewById(R.id.inventaire_b_hide_22);
 
         beruInvAff.setOnClickListener(new View.OnClickListener() {
