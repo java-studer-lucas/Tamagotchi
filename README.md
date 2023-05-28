@@ -32,7 +32,7 @@ Vous trouvez en haut à droite :
 Vous perdez un point de Faim toutes les heures.
 Vous perdez 2 points de Bonheur toutes les heures.
 
-[image](res/screen_home.jpg)
+![Home](res/screen_home.jpg "Home")
 
 En cliquant sur reload, vous reinitialisez votre Tamagotchi (fichier de donnees tammagotchi-data.json) avec les valeurs suivantes :
 * Faim = 50 sur 50 (=le max)
