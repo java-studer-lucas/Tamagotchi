@@ -62,7 +62,7 @@ Permet d'utiliser les items achetés dasn le Shop.
 Pendant 15 sec., vous devez taper sur un maximum de Vilains de la 3eme ligne, sans taper sur un carré de pelouse (vert).
 Ainsi vous gagnez des points a convertir en piece via les boutons du bas.
 
-![Jeu1](res/screen_minijeu1.png "Jeu1")
+![Jeu1](res/screen-minijeu1.png "Jeu1")
 
 ### Mini-jeu 2 : Click-Cookies
 Cliquez autant de fois que souhaité sur l'image du cookie. Cela incrénente vos points que vous pouvez convertir en pieces (10 points = 1 piece)
