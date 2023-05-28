@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,12 +42,26 @@ public class MainActivity extends AppCompatActivity {
             // throw new Exception("force reinit");
         }
         catch (Exception e) {
-            Toast.makeText(getApplicationContext(),"err:"+e.getMessage(), Toast.LENGTH_SHORT).show();
 
             // si fichier introuvable
             Tamagotchi.refreshGame(getApplicationContext(), 1);
 
         }
+
+        if (Tamagotchi.currFaim <= 0) {
+            // gérer la mort du tamagotchi
+            ImageView imageView = findViewById(R.id.sung_tamagotchi);
+            imageView.setImageResource(R.drawable.sung_img_game_over);
+            first_game = (Button) findViewById(R.id.first_game);
+            first_game.setVisibility(View.INVISIBLE);
+            inv = (Button) findViewById(R.id.inv);
+            inv.setVisibility(View.INVISIBLE);
+            shop = (Button) findViewById(R.id.shop);
+            shop.setVisibility(View.INVISIBLE);
+            second_game = (Button) findViewById(R.id.second_game);
+            second_game.setVisibility(View.INVISIBLE);
+        }
+
 
         // initialisé l'interface Nav Bar
         TextView textJaugeFaim =  findViewById(R.id.faim);
@@ -56,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         TextView textSungMoney =  findViewById(R.id.sung);
         textSungMoney.setText("Sung : " + Tamagotchi.currSung);
         Button reloadBtn = findViewById(R.id.quest_button);
-        Toast.makeText(getApplicationContext(),"Last Faim : " + Tamagotchi.lastTimeFaimDec, Toast.LENGTH_SHORT).show();
         reloadBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +80,23 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        if (Inventaire.currIgris == 2 & Inventaire.currBeru == 1) {
+            ImageView imageView = findViewById(R.id.sung_tamagotchi);
+            imageView.setImageResource(R.drawable.sung_img_igris);
+        }
+        if (Inventaire.currBeru == 2 & Inventaire.currIgris == 1) {
+            ImageView imageView = findViewById(R.id.sung_tamagotchi);
+            imageView.setImageResource(R.drawable.sung_img_beru);
+        }
+        if (Inventaire.currIgris == 1 & Inventaire.currBeru == 1) {
+            ImageView imageView = findViewById(R.id.sung_tamagotchi);
+            imageView.setImageResource(R.drawable.sung_img);
+        }
+        if (Inventaire.currBeru == 2 & Inventaire.currIgris == 2) {
+            ImageView imageView = findViewById(R.id.sung_tamagotchi);
+            imageView.setImageResource(R.drawable.sung_img_all);
+        }
 
 
 

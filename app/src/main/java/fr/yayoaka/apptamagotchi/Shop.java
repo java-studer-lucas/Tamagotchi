@@ -68,9 +68,7 @@ public class Shop extends AppCompatActivity {
                     Tamagotchi.currSung = Tamagotchi.currSung - 50;
                     Inventaire.saveJsonToFile(getApplicationContext());
                     Tamagotchi.saveJsonToFile(getApplicationContext());
-                    textSungMoney.setText("Sung : " + Tamagotchi.currSung);
-                    Toast.makeText(getApplicationContext(),"nb pain:" + Inventaire.currBread, Toast.LENGTH_SHORT).show();
-                }
+                    textSungMoney.setText("Sung : " + Tamagotchi.currSung);}
             }
         });
 
@@ -82,11 +80,11 @@ public class Shop extends AppCompatActivity {
                 if (Tamagotchi.currSung >= 200) {
                     Inventaire.currIgris++;
                     Tamagotchi.currSung = Tamagotchi.currSung - 200;
+                    shop_b_22 = (Button) findViewById(R.id.shop_b_22);
+                    shop_b_22.setVisibility(View.INVISIBLE);
                     Inventaire.saveJsonToFile(getApplicationContext());
                     Tamagotchi.saveJsonToFile(getApplicationContext());
                     textSungMoney.setText("Sung : " + Tamagotchi.currSung);
-                    shop_b_22 = (Button) findViewById(R.id.shop_b_22);
-                    shop_b_22.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -114,11 +112,11 @@ public class Shop extends AppCompatActivity {
                 if (Tamagotchi.currSung >= 200) {
                     Inventaire.currBeru++;
                     Tamagotchi.currSung = Tamagotchi.currSung - 200;
+                    shop_b_32 = (Button) findViewById(R.id.shop_b_32);
+                    shop_b_32.setVisibility(View.INVISIBLE);
                     Inventaire.saveJsonToFile(getApplicationContext());
                     Tamagotchi.saveJsonToFile(getApplicationContext());
                     textSungMoney.setText("Sung : " + Tamagotchi.currSung);
-                    shop_b_32 = (Button) findViewById(R.id.shop_b_32);
-                    shop_b_32.setVisibility(View.INVISIBLE);
                 }
             }
         });

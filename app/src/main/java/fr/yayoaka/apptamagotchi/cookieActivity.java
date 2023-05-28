@@ -88,7 +88,6 @@ public class cookieActivity extends AppCompatActivity {
                 if (Tamagotchi.clicksCookie >= 10) {
                     Tamagotchi.clicksCookie = Tamagotchi.clicksCookie - 10;
                     points.setText("Points : " + Tamagotchi.clicksCookie);
-                    Toast.makeText(getApplicationContext(),"vous avez gagné un Sung", Toast.LENGTH_SHORT).show();
                     Tamagotchi.currSung++;
                     textSungMoney.setText("Sung : " + Tamagotchi.currSung);
                     Tamagotchi.saveJsonToFile(getApplicationContext());
@@ -105,7 +104,6 @@ public class cookieActivity extends AppCompatActivity {
                 if (Tamagotchi.clicksCookie >= 100 & Tamagotchi.currFaim < 48) {
                     Tamagotchi.clicksCookie = Tamagotchi.clicksCookie - 100;
                     points.setText("Points : " + Tamagotchi.clicksCookie);
-                    Toast.makeText(getApplicationContext(),"vous avez gagné 2 de Faim", Toast.LENGTH_SHORT).show();
                     Tamagotchi.currFaim = Tamagotchi.currFaim + 2;
                     textJaugeFaim.setText("Faim : " + Tamagotchi.currFaim + "/50");
                     Tamagotchi.saveJsonToFile(getApplicationContext());
@@ -123,7 +121,6 @@ public class cookieActivity extends AppCompatActivity {
                 if (Tamagotchi.clicksCookie >= 40 & Tamagotchi.currBonheur < 48) {
                     Tamagotchi.clicksCookie = Tamagotchi.clicksCookie - 40;
                     points.setText("Points : " + Tamagotchi.clicksCookie);
-                    Toast.makeText(getApplicationContext(),"vous avez gagné 2 de bonheur", Toast.LENGTH_SHORT).show();
                     Tamagotchi.currBonheur = Tamagotchi.currBonheur + 2;
                     textJaugeBonheur.setText("Bonheur : " + Tamagotchi.currBonheur + "/50");
                     Tamagotchi.saveJsonToFile(getApplicationContext());

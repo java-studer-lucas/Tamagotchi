@@ -126,7 +126,6 @@ public class MonsterGame extends AppCompatActivity {
                 }
 
                 Tamagotchi.currSung = Tamagotchi.currSung + currScore/2;
-                //Toast.makeText(getApplicationContext(),"sung : "+ Tamagotchi.currSung + ", score :" + currScore, Toast.LENGTH_SHORT).show();
                 if (Tamagotchi.currBonheur <= 48) {
                     Tamagotchi.currBonheur = Tamagotchi.currBonheur + 2;
                 }

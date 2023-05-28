@@ -32,8 +32,6 @@ public class InventaireActivity extends AppCompatActivity {
             // throw new Exception("force reinit");
         }
         catch (Exception e) {
-            Toast.makeText(getApplicationContext(), "err:" + e.getMessage(), Toast.LENGTH_SHORT).show();
-
             // si fichier introuvable
             Tamagotchi.refreshGame(getApplicationContext(), 2);
         }
@@ -122,17 +120,12 @@ public class InventaireActivity extends AppCompatActivity {
                 if (Inventaire.currIgris == 1) {
                     TextView textChangColor = findViewById(R.id.inventaire_tv_21);
                     textChangColor.setTextColor(Color.GREEN);
-                    ImageView imageView = findViewById(R.id.inventaire_21);
-                    imageView.setImageResource(R.drawable.sung_img_igris);
                     Inventaire.currIgris++;
                     Inventaire.saveJsonToFile(getApplicationContext());
-                }
-                if (Inventaire.currIgris == 1 & Inventaire.currBeru == 1) {
-                    TextView textChangColor = findViewById(R.id.inventaire_tv_21);
-                    textChangColor.setTextColor(Color.GREEN);
-                    ImageView imageView = findViewById(R.id.inventaire_21);
-                    imageView.setImageResource(R.drawable.sung_img_all);
-                    Inventaire.saveJsonToFile(getApplicationContext());
+                    inventaire_b_21 = (Button) findViewById(R.id.inventaire_b_21);
+                    inventaire_b_21.setVisibility(View.INVISIBLE);
+                    inventaire_b_hide_21 = (Button) findViewById(R.id.inventaire_b_hide_21);
+                    inventaire_b_hide_21.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -145,14 +138,15 @@ public class InventaireActivity extends AppCompatActivity {
                 if (Inventaire.currIgris == 2) {
                     TextView textChangColor = findViewById(R.id.inventaire_tv_21);
                     textChangColor.setTextColor(Color.RED);
-                    ImageView imageView = findViewById(R.id.inventaire_21);
-                    imageView.setImageResource(R.drawable.sung_img_igris);
                     Inventaire.currIgris--;
                     Inventaire.saveJsonToFile(getApplicationContext());
+                    inventaire_b_hide_21 = (Button) findViewById(R.id.inventaire_b_hide_21);
+                    inventaire_b_hide_21.setVisibility(View.INVISIBLE);
+                    inventaire_b_21 = (Button) findViewById(R.id.inventaire_b_21);
+                    inventaire_b_21.setVisibility(View.VISIBLE);
                 }
             }
         });
-
 
 
         Button beruInvAff = findViewById(R.id.inventaire_b_22);
@@ -163,30 +157,30 @@ public class InventaireActivity extends AppCompatActivity {
                 if (Inventaire.currBeru == 1) {
                     TextView textChangColor = findViewById(R.id.inventaire_tv_22);
                     textChangColor.setTextColor(Color.GREEN);
-                    ImageView imageView = findViewById(R.id.inventaire_22);
-                    imageView.setImageResource(R.drawable.sung_img_beru);
-                }
-                if (Inventaire.currIgris == 2 & Inventaire.currBeru == 2) {
-                    TextView textChangColor = findViewById(R.id.inventaire_tv_22);
-                    textChangColor.setTextColor(Color.GREEN);
-                    ImageView imageView = findViewById(R.id.inventaire_22);
-                    imageView.setImageResource(R.drawable.sung_img_all);
-                    Inventaire.currIgris--;
+                    Inventaire.currBeru++;
                     Inventaire.saveJsonToFile(getApplicationContext());
+                    inventaire_b_22 = (Button) findViewById(R.id.inventaire_b_22);
+                    inventaire_b_22.setVisibility(View.INVISIBLE);
+                    inventaire_b_hide_22 = (Button) findViewById(R.id.inventaire_b_hide_22);
+                    inventaire_b_hide_22.setVisibility(View.VISIBLE);
                 }
             }
         });
 
         Button beruInvHide = findViewById(R.id.inventaire_b_hide_22);
 
-        beruInvAff.setOnClickListener(new View.OnClickListener() {
+        beruInvHide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Inventaire.currBeru == 1) {
+                if (Inventaire.currBeru == 2) {
                     TextView textChangColor = findViewById(R.id.inventaire_tv_22);
                     textChangColor.setTextColor(Color.RED);
-                    ImageView imageView = findViewById(R.id.inventaire_22);
-                    imageView.setImageResource(R.drawable.sung_img_beru);
+                    Inventaire.currBeru--;
+                    Inventaire.saveJsonToFile(getApplicationContext());
+                    inventaire_b_hide_22 = (Button) findViewById(R.id.inventaire_b_hide_22);
+                    inventaire_b_hide_22.setVisibility(View.INVISIBLE);
+                    inventaire_b_22 = (Button) findViewById(R.id.inventaire_b_22);
+                    inventaire_b_22.setVisibility(View.VISIBLE);
                 }
             }
         });

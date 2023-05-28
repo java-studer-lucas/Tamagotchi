@@ -47,7 +47,6 @@ public class Inventaire {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Toast.makeText(context,"data inv saved !", Toast.LENGTH_LONG).show();
     }
 
     public static void readJsonFromFile(Context context) {

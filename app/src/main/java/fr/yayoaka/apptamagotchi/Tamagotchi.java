@@ -36,9 +36,6 @@ public class Tamagotchi{
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
             saveJson.put("faim", currFaim - diffHeuresF);
-            if (currFaim <= 0) {
-                // gérer la mort du tamagotchi
-            }
 
             LocalDateTime dateTimeF = LocalDateTime.parse(lastTimeFaimDec, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
             // Ajouter des heures à la date
@@ -66,18 +63,14 @@ public class Tamagotchi{
         try {
             int intHeuresF = checkDiffDate();
             int intHeuresB = checkDiffDate();
-            Toast.makeText(context,"Nb heures F : " + intHeuresF, Toast.LENGTH_SHORT).show();
-
 
             String json = convertToJson(intHeuresF, intHeuresB);
-            Toast.makeText(context,"Last Faim 5 : " + lastTimeFaimDec, Toast.LENGTH_SHORT).show();
             FileOutputStream fos = context.openFileOutput(fileName, Context.MODE_PRIVATE);
             fos.write(json.getBytes());
             fos.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Toast.makeText(context,"data saved !", Toast.LENGTH_LONG).show();
     }
 
     public static void readJsonFromFile(Context context) {
