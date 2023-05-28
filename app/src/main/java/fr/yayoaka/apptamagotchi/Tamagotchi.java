@@ -142,7 +142,7 @@ public class Tamagotchi{
             Tamagotchi.currBonheur = 50;
             Tamagotchi.lastTimeFaimDec = formattedDate; // date complete a obtenir
             Tamagotchi.lastTimeBonheurDec = formattedDate;
-            Tamagotchi.currSung = 1000;
+            Tamagotchi.currSung = 0;
             Tamagotchi.clicksCookie = 0;
             Tamagotchi.saveJsonToFile(context);
         }
